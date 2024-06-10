@@ -1,0 +1,50 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Add spacing */
+}
+
+.col {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+.col-6 {
+    flex-basis: 50%;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+}
+
+.col-2 {
+    flex-basis: 16.67%;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-primary {
+    color: #007bff; /* Change the color */
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.margin-top-10 {
+    margin-top: 10px; /* Add spacing */
+}
