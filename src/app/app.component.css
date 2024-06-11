@@ -1,0 +1,41 @@
+/* Reset some basic styles for consistency across browsers */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Style the user list */
+#users {
+    width: 100%;
+    max-width: 300px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Style each list item */
+#users li {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Add a hover effect to the list items */
+#users li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Remove the border from the last list item */
+#users li:last-child {
+    border-bottom: none;
+}
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

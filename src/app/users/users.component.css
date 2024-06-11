@@ -1,50 +1,51 @@
-.row {
+body {
+    font-family: Arial, sans-serif;
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.user-list li {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px; /* Add spacing */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-.col {
-    flex-basis: 100%;
-    margin-bottom: 10px;
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
-.col-6 {
-    flex-basis: 50%;
+.user-info {
+    display: flex;
+    flex-direction: column;
 }
 
-.col-4 {
-    flex-basis: 33.33%;
-}
-
-.col-3 {
-    flex-basis: 25%;
-}
-
-.col-2 {
-    flex-basis: 16.67%;
-}
-
-.col-1 {
-    flex-basis: 8.33%;
-}
-
-.text-bold {
+.user-name {
     font-weight: bold;
+    font-size: 1.1em;
 }
 
-.text-primary {
-    color: #007bff; /* Change the color */
-}
-
-.text-secondary {
-    color: #6c757d;
-}
-
-.text-muted {
-    color: #6c757d;
-}
-
-.margin-top-10 {
-    margin-top: 10px; /* Add spacing */
+.user-org {
+    font-size: 0.9em;
+    color: #666;
 }

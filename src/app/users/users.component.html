@@ -1,8 +1,13 @@
-<ul class="user-list">
-    <button (click)="onClick()">
-        <li>
-            <span class="user-name">{{selectedUser.name}}</span>
-            <span class="user-org">{{selectedUser.organization}}</span>
-        </li>
-    </button>
-</ul>
+<body>
+    <ul class="user-list">
+        <button (click)="onSelctedUser()">
+            <li>
+                <img [src]="imagePath" alt="User Image" class="user-image">
+                <div class="user-info">
+                    <span class="user-name">{{selectedUser.name}}</span>
+                    <span class="user-org">{{selectedUser.organization}}</span>
+                </div>
+            </li>
+        </button>
+    </ul>
+</body>
