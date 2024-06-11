@@ -1,31 +1,14 @@
 <main>
-  <ul id="users">
-    <li>
-      <app-users
-        [selectedUser]="userData[0]"
-        (selectedUserChange)="onClickUser($event)"
-      ></app-users>
-    </li>
-    <li>
-      <app-users
-        [selectedUser]="userData[1]"
-        (selectedUserChange)="onClickUser($event)"
-      ></app-users>
-    </li>
-    <li>
-      <app-users
-        [selectedUser]="userData[2]"
-        (selectedUserChange)="onClickUser($event)"
-      ></app-users>
-    </li>
-    <li>
-      <app-users
-        [selectedUser]="userData[3]"
-        (selectedUserChange)="onClickUser($event)"
-      ></app-users>
-    </li>
-  </ul>
-
+  <div>
+    <ul id="users">
+      <li *ngFor="let user of userData">
+        <app-users
+          [selectedUser]="user"
+          (selectedUserChange)="onClickUser($event)"
+        ></app-users>
+      </li>
+    </ul>
+  </div>
   <div class="user-details">
     <h2 class="user-name">{{ selectedUser?.name }}</h2>
     <p class="user-org">{{ selectedUser?.organization }}</p>

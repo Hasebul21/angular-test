@@ -1,4 +1,4 @@
-export interface IUserData {
+export type IUserData = {
   id: number;
   name: string;
   organization: string;
